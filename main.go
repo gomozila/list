@@ -33,7 +33,7 @@ func (this *MyLinkedList) AddAtHead(val int) {
 		this.val = val
 		return
 	}
-	old := *this
+	old := *this //sdfsdf
 	*this = MyLinkedList{0, val, &old}
 	for currentNode := this.next; currentNode != nil; currentNode = currentNode.next {
 		currentNode.index++
